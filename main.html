@@ -9,13 +9,17 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form  class="was-validated"class="form-control">
-        <div >
+	<h1>Internship Form</h1>
+	<form  class="was-validated" novalidate>
+        <div class="form-row">
+			<div class="col-md-4 mb-3">
+				
             <label class="form-label" for="first-name-input">First Name</label>
-            <input class="form-control" type="text" id="first-name-input" required>
+            <input type="text" class="form-control" id="first-name-input" required>
             <div class="valid-feedback"></div>
             <div class="invalid-feedback">First name required</div>
         </div>
+
 
         <div>
             <label class="form-label" for="last-name-input">Last Name</label>
@@ -29,6 +33,8 @@
             <div class="valid-feedback"> email validated</div>
             <div class="invalid-feedback">Email required</div>
         </div>
+						</div>
+		        <div class="form-row">
         <div>
             <label for="college-input">College</label>
             <input class="form-control" type="text" id="college-input" required>
@@ -60,7 +66,8 @@
             <div class="valid-feedback"></div>
             <div class="invalid-feedback">Agree to terms and conditions You must agree before submitting</div>
         </div>
-        <button type="submit">Submit form
+			</div>		
+         <button class="btn btn-primary" type="submit">Submit form</button>
     </form>
     <script type="text/javascript" src="./script.js">
 </script>
